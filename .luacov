@@ -2,5 +2,6 @@ codefromstrings = false
 runreport = true
 deletestats = true
 modules = {
+    ["mime.default"] = "lib/default.lua",
     ["mime.parser"] = "lib/parser.lua",
 }

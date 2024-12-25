@@ -16,6 +16,7 @@ dependencies = {
 build = {
     type = "builtin",
     modules = {
+        ["mime.default"] = "lib/default.lua",
         ["mime.parser"] = "lib/parser.lua",
     },
 }
