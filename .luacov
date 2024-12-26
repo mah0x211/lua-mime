@@ -1,0 +1,8 @@
+codefromstrings = false
+runreport = true
+deletestats = true
+modules = {
+    mime = "mime.lua",
+    ["mime.default"] = "lib/default.lua",
+    ["mime.parser"] = "lib/parser.lua",
+}
