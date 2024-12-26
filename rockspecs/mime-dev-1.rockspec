@@ -11,11 +11,13 @@ description = {
 }
 dependencies = {
     "lua >= 5.1",
+    "metamodule >= 0.5.0",
     "regex >= 0.2.0",
 }
 build = {
     type = "builtin",
     modules = {
+        ["mime"] = "mime.lua",
         ["mime.default"] = "lib/default.lua",
         ["mime.parser"] = "lib/parser.lua",
     },
