@@ -14,14 +14,14 @@ luarocks install mime
 
 ---
 
-## mimetype = mime.getmime( ext [, as_filename] )
+## mimetype = mime.getmime( ext [, as_pathname] )
 
-get a MIME type string associated with `ext` argument. if `as_filename` argument is `true`, then a `ext` argument is treated as a filename and extract the extension from it.
+get a MIME type string associated with `ext` argument. if `as_pathname` argument is `true`, then a `ext` argument is treated as a pathname and extract the extension from it.
 
 **Parameters**
 
-- `ext:string`: extension string or filename. extension string should not include a leading dot.
-- `as_filename:boolean`: treat `ext` argument as a filename. (default: `false`)
+- `ext:string`: extension string or pathname. extension string should not include a leading dot.
+- `as_pathname:boolean`: treat `ext` argument as a pathname. (default: `false`)
 
 **Returns**
 
@@ -81,9 +81,9 @@ print(m) -- mime: 0x600000398040
 ```
 
 
-## mimetype = mime:getmime( ext )
+## mimetype = mime:getmime( ext [, as_pathname] )
 
-same as `mime.getmime( ext )`.
+same as `mime.getmime( ext [, as_pathname] )`.
 
 
 ## exts = mime:getexts( mime )
